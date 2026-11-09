@@ -11,6 +11,18 @@ Before answering, the agent has to:
 4. **Cross-check** every important conclusion with a second source.
 5. **Answer point by point** with short evidence, and **never write a detail it did not see** ("I did not see which").
 
+## See the difference
+
+> **You:** Study this chat and tell me why the task did not finish.
+
+**Without the skill:** it reads the titles and the last message, sees "succeeded", and answers with a confident detail it never saw.
+
+**With the skill:** it lists every part of your question, reads the sources in full, wants two signals that agree, and answers point by point. If it did not see a detail, it says so.
+
+**Skip it if** you asked for a single fact that one lookup answers.
+
+**Status:** in daily use in the author's own setup. Plain instructions, no scripts, no network calls. MIT. Issues and suggestions welcome.
+
 ## Does it work?
 
 It was tested against the same model without the skill, on real cases:
@@ -42,6 +54,30 @@ Or copy `skills/study-first/` into `~/.claude/skills/`. To make every session us
 - responde punto por punto con la prueba, sin inventar ningún detalle.
 
 Instalar: `npx skills add RabbitDesigns22/study-first`
+
+## More skills from the same setup
+
+These come from one real workflow: a small agency run with 15+ Claude Code sessions in parallel. Each skill fixes one problem that kept happening there.
+
+| Skill | What it fixes |
+|---|---|
+| [one-pass](https://github.com/RabbitDesigns22/one-pass) | get it right the first time; stop paying tokens for rework |
+| [hora-exacta](https://github.com/RabbitDesigns22/hora-exacta) | real date and time in every message, so nothing lands on the wrong day |
+| [hands-on](https://github.com/RabbitDesigns22/hands-on) | the agent does what it can and only asks you for codes, keys and payments |
+| [easy-for-them](https://github.com/RabbitDesigns22/easy-for-them) | steps people actually follow: direct link, one action per line |
+| [one-answer](https://github.com/RabbitDesigns22/one-answer) | one thought-through answer instead of plan, fix, new plan |
+| [never-twice](https://github.com/RabbitDesigns22/never-twice) | a shared error log so no session repeats a known mistake |
+| [report-now](https://github.com/RabbitDesigns22/report-now) | status checked live this minute, stamped with the time |
+| [sort-me-out](https://github.com/RabbitDesigns22/sort-me-out) | one ordered list of what is urgent, waiting and forgotten |
+| [in-the-loop](https://github.com/RabbitDesigns22/in-the-loop) | a live board so parallel sessions know what the others changed |
+| [session-watchdog](https://github.com/RabbitDesigns22/session-watchdog) | wakes the sessions that got stuck mid-task, leaves the rest alone |
+| [skill-harvest](https://github.com/RabbitDesigns22/skill-harvest) | reads your sessions and finds the skills you are missing |
+| [small-budget-ads](https://github.com/RabbitDesigns22/small-budget-ads) | Meta Ads rules for 1-5 USD a day ad sets |
+| [whatsapp-closer](https://github.com/RabbitDesigns22/whatsapp-closer) | evidence-ranked rules for a WhatsApp sales assistant that closes |
+| [whatsapp-number-onboarding](https://github.com/RabbitDesigns22/whatsapp-number-onboarding) | connect a number to the WhatsApp Cloud API in the safe order |
+| [proposal-pdf](https://github.com/RabbitDesigns22/proposal-pdf) | short PDF proposals with every price checked against its source |
+
+If one of them saved you a redo, a star helps other people find it.
 
 ## License
 

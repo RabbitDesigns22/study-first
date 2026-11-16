@@ -34,7 +34,7 @@ It is honest about the size of the gain. On short, clean questions a good model 
 ## Install
 
 ```bash
-npx skills add RabbitDesigns22/study-first
+npx skills@1.8.1 add https://github.com/RabbitDesigns22/study-first/tree/c462194a13f7a6bcf30bf827735f6f564b5c95a8
 ```
 
 Or copy `skills/study-first/` into `~/.claude/skills/`. To make every session use it, add one line to your global `CLAUDE.md`: "Before answering anything beyond a single fact, load the `study-first` skill."
@@ -53,7 +53,7 @@ Or copy `skills/study-first/` into `~/.claude/skills/`. To make every session us
 - compara con una segunda fuente;
 - responde punto por punto con la prueba, sin inventar ningún detalle.
 
-Instalar: `npx skills add RabbitDesigns22/study-first`
+Instalar: `npx skills@1.8.1 add https://github.com/RabbitDesigns22/study-first/tree/c462194a13f7a6bcf30bf827735f6f564b5c95a8`
 
 ## More skills from the same setup
 
